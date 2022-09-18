@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import CertificatesTable from "./components/certificates/CertificatesTable";
+import CertificatesTable from "./pages/certificates/CertificatesTable";
 import Navbar from "./components/navbar/Navbar";
+import { RegisterForm } from "./pages/register-form/RegisterForm";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<div>Home</div>} />
         <Route path="/certificates" element={<CertificatesTable/>} />
-        <Route path="/register" element={<div>Register Certificates</div>} />
+        <Route path="/register" element={<RegisterForm/>} />
       </Routes>
     </Router>
   );
