@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content: center;
+
+    .table {
+        max-width: 650px;
+
+        .cell {
+            align-content: right;
+        }
+
+        .tableRow &:last-child td, &:last-child th {
+            border: 0
+        }
+    }
+}
